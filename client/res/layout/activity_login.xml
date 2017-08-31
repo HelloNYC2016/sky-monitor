@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_background"
+    >
+
+    <AutoCompleteTextView
+        android:layout_width="240dp"
+        android:layout_height="45dp"
+        android:hint="  输入服务器地址"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:background="@drawable/login_text"
+        android:id="@+id/ipAddressTextView"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/portTextView"
+        android:layout_marginTop="187dp"/>
+
+
+    <AutoCompleteTextView
+        android:layout_width="240dp"
+        android:layout_height="45dp"
+        android:hint="  输入端口号"
+        android:textSize="20dp"
+        android:digits="1234567890"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:background="@drawable/login_text"
+        android:id="@+id/portTextView"
+        android:layout_below="@+id/ipAddressTextView"
+        android:layout_centerHorizontal="true"/>
+
+        <ImageButton
+            android:layout_width="240dp"
+            android:layout_height="45dp"
+            android:background="@drawable/login_button"
+            android:id="@+id/connect_button"
+            android:layout_centerVertical="true"
+            android:layout_alignStart="@+id/portTextView"/>
+
+
+
+</RelativeLayout>

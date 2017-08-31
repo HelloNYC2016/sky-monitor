@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="104dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_above="@+id/cancel_button"
+        android:background="@drawable/popup_window"
+        android:weightSum="4"
+        >
+
+
+        <ImageButton
+            android:id="@+id/share_weibo_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/share_weibo"
+            android:layout_weight="1"
+            android:layout_margin="20dp"/>
+        <ImageButton
+            android:id="@+id/share_wechat_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/share_wechat"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"/>
+        <ImageButton
+            android:id="@+id/share_qq_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/share_qq"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+        <ImageButton
+            android:id="@+id/share_qzone_button"
+            android:layout_margin="20dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/share_qzone"
+            android:layout_weight="1"
+            />
+
+
+        />
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="取消"
+        android:textColor="#adaaaa"
+        android:id="@+id/cancel_button"
+        android:background="@drawable/cancel_button"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>  
